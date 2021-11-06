@@ -4,23 +4,150 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".Dashboard">
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#090222" />
+        android:background="#66000000" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Halaman Dashboard"
+        android:layout_marginTop="65dp"
+        android:fontFamily="monospace"
+        android:text="Welcome to Our Store"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gambar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/txtTshirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T-Shirt"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toTopOf="@id/view_bg"/>
+
+    <ImageView
+        android:id="@+id/ig_tshirt1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="170dp"
+        android:src="@drawable/astronaut_jellyfish_t_shirt"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/txtTshirt"/>
+
+    <TextView
+        android:id="@+id/txtTshirt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Astronaut\nJellyfish"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginRight="170dp"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/ig_tshirt1"/>
+
+    <ImageView
+        android:id="@+id/ig_tshirt2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="170dp"
+        android:src="@drawable/astronaut_meditation_t_shirt"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/txtTshirt" />
+
+    <TextView
+        android:id="@+id/txtTshirt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Astronaut\nMeditation"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/ig_tshirt2"/>
+
+    <ImageView
+        android:id="@+id/ig_tshirt3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="170dp"
+        android:src="@drawable/hot_air_skull_space_t_shirt"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/txtTshirt1"/>
+
+    <TextView
+        android:id="@+id/txtTshirt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Hot Air\nSkull Space"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginRight="170dp"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/ig_tshirt3"/>
+
+    <ImageView
+        android:id="@+id/ig_tshirt4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="170dp"
+        android:src="@drawable/i_need_space_t_shirt"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/txtTshirt2" />
+
+    <TextView
+        android:id="@+id/txtTshirt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="I Need Space"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/ig_tshirt4"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
