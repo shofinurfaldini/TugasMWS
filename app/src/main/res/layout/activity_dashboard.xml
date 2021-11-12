@@ -16,7 +16,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="55dp"
         android:fontFamily="monospace"
         android:text="Welcome to Our Store"
         android:textColor="@color/white"
@@ -29,7 +29,7 @@
     <View
         android:id="@+id/view_bg"
         android:layout_width="350dp"
-        android:layout_height="550dp"
+        android:layout_height="500dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/gambar_bg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -149,5 +149,55 @@
         app:layout_constraintStart_toStartOf="@id/view_bg"
         app:layout_constraintEnd_toEndOf="@id/view_bg"
         app:layout_constraintTop_toBottomOf="@id/ig_tshirt4"/>
+
+    <View
+        android:id="@+id/view_menu"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gambar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_bg"/>
+
+    <ImageView
+        android:id="@+id/ig_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/menu"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="@id/view_menu"
+        app:layout_constraintTop_toTopOf="@id/view_menu"/>
+
+    <ImageView
+        android:id="@+id/ig_keranjang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/keranjang"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintStart_toStartOf="@id/ig_menu"
+        app:layout_constraintTop_toTopOf="@id/view_menu"/>
+
+    <ImageView
+        android:id="@+id/ig_list"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/list"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintStart_toStartOf="@id/ig_keranjang"
+        app:layout_constraintTop_toTopOf="@id/view_menu"/>
+
+    <ImageView
+        android:id="@+id/ig_akun"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/akun"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintStart_toStartOf="@id/ig_list"
+        app:layout_constraintTop_toTopOf="@id/view_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
